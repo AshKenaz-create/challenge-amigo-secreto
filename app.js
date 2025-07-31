@@ -23,3 +23,21 @@ function agregarAmigo() {
     
     console.log(amigos);
 }
+
+// Funcion para mostrar amigos
+function mostrarLista() {
+    let lista = document.getElementById('amigo');
+
+    // Limpiamos la lista antes de mostrarla
+    lista.innerHTML = "";
+
+    // Recorreremos el arreglo de amigos y agregamos cada uno 
+    for (let i = 0; i < amigos.length; i++) {
+        let elemento = document.createElement('li');
+        elemento.textContent = amigos[i];
+        lista.appendChild(elemento);
+        
+    }
+}
+// Despues de limpiar campo de entrada
+mostrarLista();
