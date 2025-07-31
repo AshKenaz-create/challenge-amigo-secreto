@@ -35,10 +35,10 @@ El flujo de la aplicacion es sencillo y divertido:
 ### Pantalla principal
 ![Pantalla principal](assets/pantalla_principal.png)
 
-### Agregar nombres
+### Agregar nombre
 ![Agregar nombres](assets/agregar_nombre.png)
 
-### Lista con nombres agregdos 
+### Lista con nombres agregados 
 ![Lista amigos agregados](assets/lista_amigos_agregados.png)
 
 ### Sortear amigo secreto 
@@ -59,6 +59,6 @@ git clone https://github.com/AshKenaz-create/challenge-amigo-secreto.git
 cd challenge-amigo-secretp
 ```
 
-3. **Abre el archivo index.html en tu navegador favorito:
+3. **Abre el archivo index.html en tu navegador favorito**:
 - Puedes hacerlo con doble clic desde el explorador de archivos.
 - Usar un servidor local (opcional) para una mejor experiencia.
