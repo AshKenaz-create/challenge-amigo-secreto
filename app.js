@@ -7,11 +7,18 @@ let amigos = [];
 function agregarAmigo() {
     // Capturamos el valor del input
     let input = document.getElementById('amigo');
-    let nombre = input.ariaValueMax.trim();
+    let nombre = input.value.trim();
 
     // Validamos que el campo no esté vacío
     if (nombre === "") {
         alert("Por favor, agregue un nombre.");
+        return;
+    }
+
+    // Validamos que el nombre no exista en la lista
+    if (amigos.includes(nombre)) {
+        alert("El nombre ya ha sido agregado.");
+        input.value = "";
         return;
     }
 
@@ -24,24 +31,6 @@ function agregarAmigo() {
     // Actualizamos la lista de amigos en el HTML
     actualizarLista();
 }
-
-// Funcion para mostrar amigos
-function mostrarLista() {
-    let lista = document.getElementById('amigo');
-
-    // Limpiamos la lista antes de mostrarla
-    lista.innerHTML = "";
-
-    // Recorreremos el arreglo de amigos y agregamos cada uno 
-    for (let i = 0; i < amigos.length; i++) {
-        let elemento = document.createElement('li');
-        elemento.textContent = amigos[i];
-        lista.appendChild(elemento);
-        
-    }
-}
-// Despues de limpiar campo de entrada
-mostrarLista();
 
 // Funcion para actualizar la lista de amigos en el HTML
 function actualizarLista() {
@@ -79,6 +68,6 @@ function sortearAmigo() {
 
     // Mostramos el resultado del amigo secreto en el HTML
     let resultado = document.getElementById('resultado');
-    resultado.innerHTML = '<li> El amigo secreto es: <strong>${amigoSorteado}</strong></li>';
+    resultado.innerHTML = `<li> El amigo secreto es: <strong>${amigoSorteado}</strong></li>`;
 
 }
