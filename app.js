@@ -11,7 +11,7 @@ function agregarAmigo() {
 
     // Validamos que el campo no esté vacío
     if (nombre === "") {
-        alert("Por favor, inserte un nombre.");
+        alert("Por favor, agregue un nombre.");
         return;
     }
 
@@ -21,7 +21,8 @@ function agregarAmigo() {
     // Limpiamos el campo de entrada
     input.value = "";
     
-    console.log(amigos);
+    // Actualizamos la lista de amigos en el HTML
+    actualizarLista();
 }
 
 // Funcion para mostrar amigos
@@ -41,3 +42,23 @@ function mostrarLista() {
 }
 // Despues de limpiar campo de entrada
 mostrarLista();
+
+// Funcion para actualizar la lista de amigos en el HTML
+function actualizarLista() {
+    // Obtener un elemento de la lista
+    let lista = document.getElementById('listaAmigos');
+
+    // Limpiar la lista existente
+    lista.innerHTML = "";
+
+    // Recorrer el array de amigos y agregar cada uno a la lista
+    for (let i = 0; i < amigos.length; i++) {
+        // Crear un nuevo elemento de lista
+        let nuevoElemento = document.createElement('li');
+        nuevoElemento.textContent = amigos[i];
+        
+        // Agregar el nuevo elemento a la lista
+        lista.appendChild(nuevoElemento);
+        
+    }
+}
