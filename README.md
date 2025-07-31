@@ -12,6 +12,11 @@ El flujo de la aplicacion es sencillo y divertido:
 2. Con el botón **"Adicionar"**, agregan el nombre a una lista visible en la pantalla.
 3. Una vez registrados todos los participantes, con el botón **"Sortear amigo "**, la aplicación selecciona al azar un nombre y lo muestra en la página.
 
+## Nota
+
+- Asegurate de agregar al menos un nombre antes de realizar el sorteo.
+- Si intentas sortear sin nomnbres, la aplicación mostrará una alerta.
+
 ## Funcionalidades
 
 - **Agregar nombres**: Permite a los usuarios ingresar nombres en un campo de texto y añadirlos a la lista con el botón "Adicionar".
@@ -30,9 +35,30 @@ El flujo de la aplicacion es sencillo y divertido:
 ### Pantalla principal
 ![Pantalla principal](assets/pantalla_principal.png)
 
-### Ejemplo de lista con nombres agregdos 
+### Agregar nombres
+![Agregar nombres](assets/agregar_nombre.png)
+
+### Lista con nombres agregdos 
+![Lista amigos agregados](assets/lista_amigos_agregados.png)
+
+### Sortear amigo secreto 
+![Amigo secreto seleccionado](assets/amigo_secreto_revelado.png)
 
 ## Instalación y uso
 
-1. Clona el repositorio o descarga el proyecto:
-## ```bash
+Sigue estos pasos para clonar y ejecutar el proyecto en tu computadora:
+
+1. **Clona el repositorio** o descarga el proyecto:
+
+```bash
+git clone https://github.com/AshKenaz-create/challenge-amigo-secreto.git
+```
+2. **Accede a la carpeta del proyecto**:
+
+```bash
+cd challenge-amigo-secretp
+```
+
+3. **Abre el archivo index.html en tu navegador favorito:
+- Puedes hacerlo con doble clic desde el explorador de archivos.
+- Usar un servidor local (opcional) para una mejor experiencia.
